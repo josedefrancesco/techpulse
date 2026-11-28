@@ -12,6 +12,21 @@
     </header>
 
     <main>
+      <section id="ai-assistant" aria-label="AI Tech Advisor">
+        <h2>AI Tech Advisor</h2>
+        <p>Describe what you are looking for (for example: <em>"laptop for school under $800"</em> or <em>"phone with a great screen"</em>):</p>
+        <form id="ai-form">
+          <input
+            type="text"
+            id="ai-prompt"
+            placeholder="e.g., fast laptop, tablet, charger..."
+            required
+          />
+          <button type="submit">Recommend</button>
+        </form>
+        <p id="ai-status" role="status"></p>
+        <div id="ai-results"></div>
+      </section>
       <h2>Featured Products</h2>
       <section id="product-list"></section>
     </main>
